@@ -63,3 +63,37 @@ export const mockDataTeam = [
 {"id":60,"first_name":"Marysa","last_name":"Gue","gender":"Female","age":null,"role":"IT (Web)","university":null},
 {"id":61,"first_name":"Agustin","last_name":"Parslow","gender":"Male","age":null,"role":"Logistics","university":null}];
 
+export const mockBarData=[
+    {
+        
+        department: "HR",
+        user: 100,
+        "userColor": "hsl(208, 70%, 50%)"
+    },
+    {
+       
+        department: "HR",
+        user:220,
+        "userColor": "hsl(208, 70%, 50%)"
+    },
+    {
+       
+        department: "İT(WEb)",
+        user:300,
+        "userColor": "hsl(208, 70%, 50%)"
+    },
+    {
+      
+        department: "İT",
+        user: 200,
+        "userColor": "hsl(208, 70%, 50%)"
+
+    },
+    {
+      
+        department: "Lp",
+        user: 210,
+        "userColor": "hsl(208, 70%, 50%)"
+
+    },
+]
