@@ -61,4 +61,5 @@ export const mockDataTeam = [
 {"id":58,"first_name":"Chad","last_name":"Geeson","gender":"Female","age":null,"role":"HR","university":null},
 {"id":59,"first_name":"Garland","last_name":"Scholes","gender":"Female","age":null,"role":"Digital Marketing","university":null},
 {"id":60,"first_name":"Marysa","last_name":"Gue","gender":"Female","age":null,"role":"IT (Web)","university":null},
-{"id":61,"first_name":"Agustin","last_name":"Parslow","gender":"Male","age":null,"role":"Logistics","university":null}]
+{"id":61,"first_name":"Agustin","last_name":"Parslow","gender":"Male","age":null,"role":"Logistics","university":null}];
+
