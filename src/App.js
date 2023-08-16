@@ -5,6 +5,8 @@ import Sidebar from "./scenes/global/Sidebar";
 import Dashboard from "./scenes/dashboard";
 import { useMode } from "./theme";
 import { ThemeProvider } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+import { ColorModeProvider } from '@mui/material/styles';
 
 import Team from "./scenes/team";
 // import Bar from "./scenes/bar";
@@ -22,7 +24,7 @@ function App() {
   return (
     // <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
-        {/* <CssBaseline /> */}
+        <CssBaseline />
         <div className="app">
           <Sidebar isSidebar={isSidebar} />
           <main className="content">

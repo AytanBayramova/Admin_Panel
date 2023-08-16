@@ -75,7 +75,7 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
                   ml="15px"
                 >
                   <Typography variant="h3" color={colors.grey[100]}>
-                    ADMINIS
+                    ADMINS
                   </Typography>
                   <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
                     <MenuOutlinedIcon />
@@ -94,6 +94,8 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
                     fontWeight="bold"
                     sx={{ m: "10px 0 0 0" }}
                   >
+              
+                
                    Aytan Bayramova
                   </Typography>
                   <Typography variant="h5" color={colors.greenAccent[500]}>
