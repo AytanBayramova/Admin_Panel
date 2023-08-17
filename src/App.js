@@ -7,14 +7,15 @@ import { useMode } from "./theme";
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { ColorModeProvider } from '@mui/material/styles';
-
+import Login from "./scenes/login"
 import Team from "./scenes/team";
 import Bar from "./scenes/bar";
-// import Line from "./scenes/line";
-// import Pie from "./scenes/pie";
+import Line from "./scenes/line";
+import Pie from "./scenes/pie";
 // import { CssBaseline, ThemeProvider } from "@mui/material";
 // import { ColorModeContext, useMode } from "./theme";
 import Calendar from "./scenes/calendar/calendar";
+import Departments from "./scenes/departments/departments";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -32,9 +33,13 @@ function App() {
               <Route path="/" element={<Dashboard />} />
               <Route path="/team" element={<Team />} />
               <Route path="/bar" element={<Bar />} />
-              {/* <Route path="/pie" element={<Pie />} />
-              <Route path="/line" element={<Line />} /> */}
+              <Route path="/pie" element={<Pie />} />
+              <Route path="/line" element={<Line />} />
+              <Route path="/login" element={<Login />} />
+
                <Route path="/calendar" element={<Calendar />} />
+               <Route path="/departments" element={<Departments />} />
+
             </Routes>
           </main>
         </div>

@@ -11,6 +11,7 @@ import CalendarTodayOutlinedIcon from "@mui/icons-material/CalendarTodayOutlined
 import BarChartOutlinedIcon from "@mui/icons-material/BarChartOutlined";
 import PieChartOutlineOutlinedIcon from "@mui/icons-material/PieChartOutlineOutlined";
 import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
+import LoginOutlinedIcon from '@mui/icons-material/LoginOutlined';
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import 'react-pro-sidebar/dist/css/styles.css';
 const Item = ({ title, to, icon, selected, setSelected }) => {
@@ -76,7 +77,7 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
                   ml="15px"
                 >
                   <Typography variant="h3" color={colors.grey[100]}>
-                    ADMINS
+                    ADMIN
                   </Typography>
                   <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
                     <MenuOutlinedIcon />
@@ -100,17 +101,27 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
                    Aytan Bayramova
                   </Typography>
                   <Typography variant="h3" color={colors.greenAccent[500]}>
-                     Admin
+                  
                   </Typography>
                 </Box>
               </Box>
             )}
+
+            
   
             <Box paddingLeft={isCollapsed ? undefined : "10%"}>
               <Item
                 title="Dashboard"
                 to="/"
                 icon={<HomeOutlinedIcon />}
+                selected={selected}
+                setSelected={setSelected}
+              />
+
+                <Item
+                title="Log in"
+                to="/login"
+                icon={<LoginOutlinedIcon />}
                 selected={selected}
                 setSelected={setSelected}
               />

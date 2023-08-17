@@ -1,12 +1,15 @@
-import { Box, Typography, useTheme } from "@mui/material";
+import { Box, Typography, useTheme, InputBase } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
 import { tokens } from "../../theme";
 import { mockDataTeam } from "../../data/mockData";
 import Header from "../../components/Header";
+import React, { useState } from "react";
 
 const Team = () => {
     const theme =useTheme();
     const colors = tokens(theme.pallete);
+    const [searchValue, setSearchValue] = useState(""); // State for search input
+    const [filteredRows, setFilteredRows] = useState(mockDataTeam);
 
     const columns = [
          {field: "id", headerName: "ID"}, 
@@ -31,6 +34,18 @@ const Team = () => {
         {field:"university", headerName:"University", flex:1}
         ];
 
+        React.useEffect(() => {
+            if (!searchValue) {
+              setFilteredRows(mockDataTeam); // Show all data when search is empty
+            } else {
+              const filtered = mockDataTeam.filter(row =>
+                row.first_name.toLowerCase().includes(searchValue.toLowerCase()) ||
+                row.last_name.toLowerCase().includes(searchValue.toLowerCase())
+              );
+              setFilteredRows(filtered);
+            }
+          }, [searchValue]);
+
     return (
         <Box m="20px">
             <Header title="TEAM" subtitle="Managing the Team Member"/>
@@ -54,7 +69,15 @@ const Team = () => {
               },
             }}
           >
-            <DataGrid checkboxSelection rows={mockDataTeam} columns={columns} />
+  <InputBase 
+          sx={{ ml: 2, flex: 1 }}
+          placeholder="Search by name..."
+          value={searchValue}
+          onChange={(e) => setSearchValue(e.target.value)}
+        />
+        
+
+            <DataGrid checkboxSelection rows={filteredRows} columns={columns} />
           </Box>
         </Box>
       );
