@@ -17,20 +17,21 @@ const Team = () => {
         {field:"last_name", headerName:"Last Name", flex:1, cellClassNAme:"last_name-column--cell"},
         {field:"gender", headerName:"Gender"},
         {field:"age", headerName:"Age", type:"number", headerAlign:"left", align:"left"},
-        {field:"role", headerName:"Role", flex:1, 
-        renderCell:({row: {role}})=>{
-            return(
-            <Box
-             width="60%"
-              m="0 auto"
-             p="5px"
-             display="flex"
-             justifyContent="center"
-                borderRadius="4px"
-             >
-                { }
-                </Box>
-                )}},
+        {
+            field: "role",
+            headerName: "Role",
+            flex: 1,
+            renderCell: ({ value }) => (
+              <div>
+                {value === "IT (Web)" && <span>IT (Web)</span>}
+                {value === "HR" && <span>Human Resources</span>}
+                {value === "Digital Marketing" && <span>Digital Marketing</span>}
+                {value === "Logistics" && <span>Logistics</span>}
+                {value === "Road Construction Engineer" && <span>Road Construction Engineer</span>}
+                {value === "Accouting" && <span>Accounting</span>}
+              </div>
+            ),
+          },
         {field:"university", headerName:"University", flex:1}
         ];
 

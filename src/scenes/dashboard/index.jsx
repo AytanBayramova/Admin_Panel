@@ -6,13 +6,14 @@ import Header from "../../components/Header";
 import LineChart from "../../components/LineChart";
 import BarChart from "../../components/BarChart";
 import PieChart from "../../components/PieChart";
-
+import { Link } from "react-router-dom";
 import StatBox from "../../components/StatBox";
 import ProgressCircle from "../../components/ProgressCircle";
 
 const Dashboard = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
+ 
 
   return (
     <Box m="20px">
@@ -38,16 +39,19 @@ const Dashboard = () => {
           alignItems="center"
           justifyContent="center"
         >
+             
           <StatBox
-            title="12 users"
+            title="21 users"
             subtitle="IT (WEB)"
             icon={
-              <PersonAddIcon
+              <PersonAddIcon 
                 sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
               />
             }
           />
+         
         </Box>
+        
         <Box
           gridColumn="span 3"
           backgroundColor={colors.primary[400]}
@@ -55,8 +59,9 @@ const Dashboard = () => {
           alignItems="center"
           justifyContent="center"
         >
+           
           <StatBox
-            title="24 users"
+            title="9 users"
             subtitle="Human Resources"
             icon={
               <PersonAddIcon
@@ -64,6 +69,8 @@ const Dashboard = () => {
               />
             }
           />
+              
+
         </Box>
         <Box
           gridColumn="span 3"
@@ -73,7 +80,7 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StatBox
-            title="32 users"
+            title="10 users"
             subtitle="Digital Marketing"
             icon={
               <PersonAddIcon
@@ -90,7 +97,7 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StatBox
-            title="15 users"
+            title="2 users"
             subtitle="Road construction engineer"
             icon={
               <PersonAddIcon
@@ -107,7 +114,7 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StatBox
-            title="15 users"
+            title="6 users"
             subtitle="Logistics"
             icon={
               <PersonAddIcon
@@ -123,19 +130,21 @@ const Dashboard = () => {
           alignItems="center"
           justifyContent="center"
         >
+            
           <StatBox
-            title="15 users"
+            title="11 users"
             subtitle="Accounting"
             icon={
               <PersonAddIcon
                 sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
               />
             }
+           
           />
         </Box>
 
         {/* ROW 2 */}
-        <Box
+        {/* <Box
           gridColumn="span 10"
           gridRow="span 2"
           backgroundColor={colors.primary[400]}
@@ -179,12 +188,12 @@ const Dashboard = () => {
           backgroundColor={colors.primary[400]}
           overflow="auto"
         >
-          </Box>
+          </Box> */}
 
         {/* ROW 3 */}
       
         <Box
-          gridColumn="span 5"
+          gridColumn="span 6"
           gridRow="span 2"
           backgroundColor={colors.primary[400]}
         >
@@ -200,16 +209,16 @@ const Dashboard = () => {
           </Box>
         </Box>
         <Box
-          gridColumn="span 4"
+          gridColumn="span 1"
           gridRow="span 2"
           backgroundColor={colors.primary[400]}
-          padding="30px"
+        //   padding="30px"
         >
         
         </Box>
 
         <Box
-          gridColumn="span 5"
+          gridColumn="span 1"
           gridRow="span 2"
           backgroundColor={colors.primary[400]}
         >
@@ -225,7 +234,7 @@ const Dashboard = () => {
           </Box>
         </Box>
         <Box
-          gridColumn="span 4"
+          gridColumn="span 1"
           gridRow="span 2"
           backgroundColor={colors.primary[400]}
           padding="30px"

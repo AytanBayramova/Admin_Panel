@@ -41,6 +41,9 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
     return (
       <Box
         sx={{
+            
+            
+            
           "& .pro-sidebar-inner": {
             background: `${colors.primary[400]} !important`,
           },
@@ -158,13 +161,60 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
                 setSelected={setSelected}
               />
               
+             
+
+                <Typography
+                variant="h5"
+                color={colors.grey[300]}
+                sx={{ m: "15px 0 5px 20px" }}
+              >
+                Departments
+              </Typography>
+
               <Item
-                title="Departments"
-                to="/departments"
+                title="IT (Web)"
+                to="/it"
                 icon={<WorkspacesOutlinedIcon />}
                 selected={selected}
                 setSelected={setSelected}
               />
+               <Item
+                title="Human Resources"
+                to="/humanresources"
+                icon={<WorkspacesOutlinedIcon />}
+                selected={selected}
+                setSelected={setSelected}
+              />
+               <Item
+                title="Digital Marketing"
+                to="/digitalmarketing"
+                icon={<WorkspacesOutlinedIcon />}
+                selected={selected}
+                setSelected={setSelected}
+              />
+              <Item
+                title="Road construction engineer"
+                to="/roadconstruction"
+                icon={<WorkspacesOutlinedIcon />}
+                selected={selected}
+                setSelected={setSelected}
+              />
+              <Item
+                title="Logistics"
+                to="/logistics"
+                icon={<WorkspacesOutlinedIcon />}
+                selected={selected}
+                setSelected={setSelected}
+              />
+              <Item
+                title="Accounting"
+                to="/accounting"
+                icon={<WorkspacesOutlinedIcon />}
+                selected={selected}
+                setSelected={setSelected}
+              />
+
+              
               <Typography
                 variant="h5"
                 color={colors.grey[300]}
@@ -186,13 +236,13 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
                 selected={selected}
                 setSelected={setSelected}
               />
-              <Item
+              {/* <Item
                 title="Line Chart"
                 to="/line"
                 icon={<TimelineOutlinedIcon />}
                 selected={selected}
                 setSelected={setSelected}
-              />
+              /> */}
               
             </Box>
           </Menu>
