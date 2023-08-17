@@ -14,6 +14,9 @@ import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
 import LoginOutlinedIcon from '@mui/icons-material/LoginOutlined';
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import 'react-pro-sidebar/dist/css/styles.css';
+import Scrollbars from 'react-scrollbars-custom';
+
+
 const Item = ({ title, to, icon, selected, setSelected }) => {
     const theme = useTheme();
     const colors = tokens(theme.palette.mode);
@@ -39,6 +42,7 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
     const [selected, setSelected] = useState("Dashboard");
   
     return (
+        
       <Box
         sx={{
             

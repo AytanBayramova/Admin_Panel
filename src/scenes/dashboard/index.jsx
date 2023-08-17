@@ -193,7 +193,7 @@ const Dashboard = () => {
         {/* ROW 3 */}
       
         <Box
-          gridColumn="span 6"
+          gridColumn="span 9"
           gridRow="span 2"
           backgroundColor={colors.primary[400]}
         >
@@ -208,17 +208,11 @@ const Dashboard = () => {
             <BarChart isDashboard={true} />
           </Box>
         </Box>
-        <Box
-          gridColumn="span 1"
-          gridRow="span 2"
-          backgroundColor={colors.primary[400]}
-        //   padding="30px"
-        >
-        
-        </Box>
+       
 
         <Box
-          gridColumn="span 1"
+        
+          gridColumn="span 9"
           gridRow="span 2"
           backgroundColor={colors.primary[400]}
         >
@@ -233,14 +227,7 @@ const Dashboard = () => {
             <PieChart isDashboard={true} />
           </Box>
         </Box>
-        <Box
-          gridColumn="span 1"
-          gridRow="span 2"
-          backgroundColor={colors.primary[400]}
-          padding="30px"
-        >
         
-        </Box>
       </Box>
     </Box>
   );
