@@ -13,14 +13,12 @@ import ProgressCircle from "../../components/ProgressCircle";
 const Dashboard = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
- 
 
   return (
     <Box m="20px">
       {/* HEADER */}
       <Box display="flex" justifyContent="space-between" alignItems="center">
         <Header title="DASHBOARD" subtitle="Welcome to your dashboard" />
-
        
       </Box>
 
@@ -70,7 +68,6 @@ const Dashboard = () => {
             }
           />
               
-
         </Box>
         <Box
           gridColumn="span 3"
@@ -211,7 +208,6 @@ const Dashboard = () => {
        
 
         <Box
-        
           gridColumn="span 9"
           gridRow="span 2"
           backgroundColor={colors.primary[400]}
