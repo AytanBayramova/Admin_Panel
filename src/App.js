@@ -17,14 +17,10 @@ import Pie from "./scenes/pie";
 import Calendar from "./scenes/calendar/calendar";
 import IT from "./scenes/it";
 import HumanResources from "./scenes/humanresources";
-
 import DigitalMarketing from "./scenes/digitalmarketing";
-
 import RoadConstruction from "./scenes/road";
-
 import Accounting from "./scenes/accounting";
 import Logistics from "./scenes/logistics";
-
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -45,17 +41,13 @@ function App() {
               <Route path="/pie" element={<Pie />} />
               {/* <Route path="/line" element={<Line />} /> */}
               <Route path="/login" element={<Login />} />
-
                <Route path="/calendar" element={<Calendar />} />
                <Route path="/IT" element={<IT/>} />
                <Route path="/accounting" element={<Accounting/>} />
-
                <Route path="/humanresources" element={<HumanResources/>} />
                <Route path="/logistics" element={<Logistics/>} />
                <Route path="/roadconstruction" element={<RoadConstruction/>} />
                <Route path="/digitalmarketing" element={<DigitalMarketing/>} />
-
-
             </Routes>
           </main>
         </div>
