@@ -10,10 +10,7 @@ import { ColorModeProvider } from '@mui/material/styles';
 import Login from "./scenes/login"
 import Team from "./scenes/team";
 import Bar from "./scenes/bar";
-// import Line from "./scenes/line";
 import Pie from "./scenes/pie";
-// import { CssBaseline, ThemeProvider } from "@mui/material";
-// import { ColorModeContext, useMode } from "./theme";
 import Calendar from "./scenes/calendar/calendar";
 import IT from "./scenes/it";
 import HumanResources from "./scenes/humanresources";
@@ -27,7 +24,7 @@ function App() {
   const [isSidebar, setIsSidebar] = useState(true);
 
   return (
-    // <ColorModeContext.Provider value={colorMode}>
+
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <div className="app">
@@ -52,7 +49,7 @@ function App() {
           </main>
         </div>
       </ThemeProvider>
-    // </ColorModeContext.Provider>
+ 
   );
 }
 
